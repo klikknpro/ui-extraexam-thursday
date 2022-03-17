@@ -79,7 +79,7 @@ a {
 /* FONTS */
 /* === === === */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"); */
 
 /* font-family: 'Poppins', sans-serif; */
 
@@ -113,9 +113,9 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-  color: var(--clr-light);
-
+  background-color: var(--clr-dark);
   border-bottom: 2px solid var(--clr-light);
+  color: var(--clr-light);
 }
 
 nav h1 {
@@ -137,10 +137,85 @@ nav .menu-icon {
 .flex-container {
   max-width: 1000px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 80px;
+  padding: 40px;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 90px 20px;
+}
+
+.movie-card {
+  max-width: 395px;
+  min-width: 340px;
+  min-height: 405px;
+  max-height: fit-content;
+  padding: 40px;
+  position: relative;
+
+  background-color: var(--clr-light);
+
+  font-weight: 400;
+  color: var(--clr-dark);
+}
+
+.movie-card .index {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--clr-light);
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+
+  font-size: 24px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.year,
+.description {
+  font-size: 18px;
+}
+
+.year {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--clr-dark);
+}
+
+.description {
+  padding-bottom: 10px;
+}
+
+.movie-card button {
+  width: calc(100% - 80px);
+  height: 60px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: var(--clr-dark);
+  border: 1px solid var(--clr-light);
+
+  color: var(--clr-light);
+  font-size: 14px;
+}
+
+.movie-card button:hover {
+  background-color: var(--clr-light);
+  border: 1px solid var(--clr-dark);
+  color: var(--clr-dark);
 }
