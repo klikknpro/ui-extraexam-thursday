@@ -74,3 +74,73 @@ a {
 }
 
 /* CSS Reset end */
+
+/* === === === */
+/* FONTS */
+/* === === === */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* === === === */
+/* CUSTOM PROPERTIES */
+/* === === === */
+
+:root {
+  --clr-dark: #242d38;
+  --clr-light: #efd592;
+}
+
+body {
+  background-color: var(--clr-dark);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 60px;
+  padding: 0 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--clr-light);
+
+  border-bottom: 2px solid var(--clr-light);
+}
+
+nav h1 {
+  font-size: 36px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 620px) {
+  nav h1 {
+    font-size: 16px;
+  }
+}
+
+nav .menu-icon {
+  font-size: 24px;
+}
+
+.flex-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 90px 20px;
+}

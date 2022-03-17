@@ -1,4 +1,4 @@
-const movies = [
+[
   {
     title: "Youth",
     sub: "2015",
@@ -40,14 +40,3 @@ const movies = [
     text: "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
   },
 ];
-
-function init() {
-  const section = document.querySelector(".flexbox-container");
-
-  for (let i = 0; i < movies.length; i++) {
-    const movie = movies[i];
-    section.insertAdjacentHTML("beforeend", movieCard(movie, i));
-  }
-}
-
-window.addEventListener("load", init);
