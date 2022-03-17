@@ -41,8 +41,22 @@ const movies = [
   },
 ];
 
+const movieCard = (movie, i) => {
+  return `
+    <div class="movie-card">
+      <div class="text-container">
+        <p class="index">${i + 1}</p>
+        <h2 class="title">${movie.title}</h2>
+        <p class="year">${movie.sub}</p>
+        <p class="description">${movie.text}</p>
+      </div>
+      <button>Watch</button>
+    </div>
+  `;
+};
+
 function init() {
-  const section = document.querySelector(".flexbox-container");
+  const section = document.querySelector(".flex-container");
 
   for (let i = 0; i < movies.length; i++) {
     const movie = movies[i];
